@@ -11,20 +11,15 @@
       "required": true,
       "value": ""
     },
-    "BOT_SETTINGS": {
-      "description": "PREFIX, MODE, STICKER_NAME, ALWAYS_ONLINE, AUTO_VOICE, AUTO_REPLY, AUTO_STICKER, AUTO_RECORDING, AUTO_TYPING, AUTO_REACT, READ_MESSAGE, COMMAND_COOLDOWN_SECONDS",
-      "required": false,
-      "value": "PREFIX=., MODE=public, STICKER_NAME=GURU MD, ALWAYS_ONLINE=true, AUTO_VOICE=false, AUTO_REPLY=false, AUTO_STICKER=false, AUTO_RECORDING=true, AUTO_TYPING=false, AUTO_REACT=false, READ_MESSAGE=false, COMMAND_COOLDOWN_SECONDS=3"
+    "PREFIX": {
+      "description": "Your bot prefix",
+      "required": true,
+      "value": "."
     },
-    "STATUS_SETTINGS": {
-      "description": "AUTO_STATUS_SEEN, AUTO_STATUS_REACT, AUTO_STATUS_REPLY, AUTO_STATUS_MSG",
-      "required": false,
-      "value": "AUTO_STATUS_SEEN=true, AUTO_STATUS_REACT=true, AUTO_STATUS_REPLY=false, AUTO_STATUS_MSG=*SEEN YOUR STATUS BY GURU MD 🤍*"
-    },
-    "GROUP_SETTINGS": {
-      "description": "ANTI_LINK, ANTI_LINK_KICK, ANTI_BAD, DELETE_LINKS, WELCOME, ANTI_DEL_PATH, ADMIN_EVENTS, MENTION_REPLY",
-      "required": false,
-      "value": "ANTI_LINK=true, ANTI_LINK_KICK=false, ANTI_BAD=true, DELETE_LINKS=false, WELCOME=true, ANTI_DEL_PATH=log, ADMIN_EVENTS=false, MENTION_REPLY=false"
+    "MODE": {
+      "description": "public/private/inbox/group",
+      "required": true,
+      "value": "public"
     }
   },
   "buildpacks": [
